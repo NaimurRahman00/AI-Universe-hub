@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Universe hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header></header>
+    <main class="max-w-[1440px] w-[80%] mx-auto">
+      <div class="flex flex-col justify-center gap-6 p-10">
+        <h1 class="text-center text-5xl">AI Universe Hub</h1>
+        <button onclick="sortByDate()" class="bg-rose-500 text-white btn w-fit mx-auto">
+          Sort by date
+        </button>
+      </div>
+      <div
+        id="show-data"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      ></div>
+      <div class="text-center mx-auto w-fit my-6">
+        <button id="see-more-btn" onclick="seeMore()" class="bg-rose-500 text-white btn">
+          See More
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <!-- Open the modal using ID.showModal() method -->
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div id="modal-id" class="max-w-6xl overflow-visible modal-box">
+
+        </div>
+      </dialog>
+    </main>
+    <footer></footer>
+
+    <!-- script -->
+    <script src="universe-hub.js"></script>
+  </body>
+</html>
